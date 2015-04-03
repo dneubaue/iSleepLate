@@ -27,6 +27,7 @@
         [self.alarm cancelScheduledLocalNotification];
         [sender setTitle:@"Set Alarm" forState:UIControlStateNormal];
         sender.backgroundColor = [UIColor colorWithRed:12/255.0 green:51/255.0 blue:82/255.0 alpha:0.6];
+        [self.navigationController popToRootViewControllerAnimated:YES];
     }
 }
 
