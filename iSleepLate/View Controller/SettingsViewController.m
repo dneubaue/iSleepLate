@@ -66,8 +66,9 @@
 - (UISwitch *)settingsSwitch
 {
     UISwitch *theSwitch = [[UISwitch alloc] init];
-    theSwitch.onTintColor = [UIColor redColor];
-    theSwitch.backgroundColor = [UIColor grayColor];
+    theSwitch.onTintColor = [UIColor colorWithRed:234/255.0 green:100/255.0 blue:90/255.0 alpha:1.0];
+    theSwitch.backgroundColor = [UIColor colorWithRed:196/255.0 green:196/255.0 blue:196/255.0 alpha:1.0];
+    theSwitch.tintColor = [UIColor colorWithRed:196/255.0 green:196/255.0 blue:196/255.0 alpha:1.0];
     theSwitch.layer.cornerRadius = 16.0;
     [theSwitch addTarget:self
                   action:@selector(snoozeSwitchToggled:)
